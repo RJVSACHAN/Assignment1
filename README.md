@@ -8,13 +8,11 @@ window = Tk()
 window.geometry('400x400')
 
 # Step 3: Adding Inputs
-
 # Entry Box
 e = Entry(window, width=56, borderwidth=5)
 e.place(x=0, y=0)
 
 # Buttons
-
 def click(num):
     result=e.get()
     e.delete(0, END)
@@ -51,7 +49,6 @@ b = Button(window, text='0', width=12, command=lambda:click(0))
 b.place(x=10, y=240)
 
 # OPERATORS
-
 def add():
     n1 = e.get()
     global math
